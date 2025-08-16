@@ -34,7 +34,7 @@ const ContactSection = () => {
             from apartment moves to villa relocations with care and efficiency
           </p>
         </div>
-        <div className="mt-10 grid md:grid-cols-3 gap-x-5">
+        <div className="mt-10 grid md:grid-cols-3 gap-x-5 md:px-0 px-5">
           <div className="bg-white hover:bg-[#fcd200]/30 transition-colors duration-500 drop-shadow-lg flex flex-col items-center justify-center gap-y-4 p-6">
             <AlarmCheck className="w-10 h-10 b2" />
             <p className=" b1 font-medium">Quick Response</p>
@@ -49,7 +49,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <form id="Quote-Form" className="bg-white drop-shadow-lg md:ml-16">
+      <form id="Quote-Form" className="bg-white drop-shadow-xl md:ml-16">
         <div className="p-5 b1-bg">
           <h3 className="md:text-3xl text-2xl font-black b-white text-center">
             Request A Quote
