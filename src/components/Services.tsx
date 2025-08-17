@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const services = [
+export const services = [
   {
     title: "Apartment Moving",
     desc: "Our apartment movers and packers in UAE handle relocations of any size, from studio flats to multi-bedroom units. We pack your belongings securely and move them carefully so you can settle in quickly.",
