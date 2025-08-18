@@ -162,7 +162,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="mt-32 md:w-11/12 mx-auto md:px-0 px-3 grid md:grid-cols-2 grid-cols-1 items-center gap-10">
+        <section className="mt-32 md:w-11/12 mx-auto md:px-0 px-3 grid md:grid-cols-2 grid-cols-1 items-center gap-10">
           <div>
             <p className="b2 text-lg font-medium">OUR BRANCHES</p>
             <h2 className="md:text-5xl text-3xl font-black b1 mt-4">
@@ -236,7 +236,7 @@ export default function Home() {
               className="absolute object-center md:object-cover object-contain"
             />
           </div>
-        </div>
+        </section>
         <section className="mt-32 h-[450px] overflow-hidden bg-fixed relative">
           <Image
             src={"/ocal-moving-sharjah-movers-2.jpg"}

@@ -12,8 +12,15 @@ import {
 import { DatePicker } from "./ui/DatePicker";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import { ReactNode } from "react";
 
-const ContactSection = () => {
+const ContactSection = ({
+  title,
+  desc,
+}: {
+  title?: string;
+  desc?: ReactNode;
+}) => {
   return (
     <section
       id="contact-section"
@@ -21,18 +28,25 @@ const ContactSection = () => {
     >
       <div className="">
         <h2 className="b1 font-black md:text-5xl text-3xl">
-          Best House Moving Company in Dubai, UAE
+          {title ? title : "Best House Moving Company in Dubai, UAE"}
         </h2>
         <div className="md:mt-8 mt-5 b-text">
-          <p>
-            Founded in 2018, our team of 50+ trained packers and movers delivers
-            stress-free house shifting services across Dubai, Abu Dhabi,
-            Sharjah, and Ajman.
-          </p>
-          <p>
-            As experienced movers and packers in the UAE, we handle everything
-            from apartment moves to villa relocations with care and efficiency
-          </p>
+          {desc ? (
+            desc
+          ) : (
+            <>
+              <p>
+                Founded in 2018, our team of 50+ trained packers and movers
+                delivers stress-free house shifting services across Dubai, Abu
+                Dhabi, Sharjah, and Ajman.
+              </p>
+              <p>
+                As experienced movers and packers in the UAE, we handle
+                everything from apartment moves to villa relocations with care
+                and efficiency
+              </p>
+            </>
+          )}
         </div>
         <div className="mt-10 grid md:grid-cols-3 gap-x-5 md:px-0 px-5">
           <div className="bg-white hover:bg-[#fcd200]/30 transition-colors duration-500 drop-shadow-lg flex flex-col items-center justify-center gap-y-4 p-6">

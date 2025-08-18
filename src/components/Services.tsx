@@ -76,9 +76,9 @@ const Services = () => {
       className="grid md:grid-cols-3 grid-cols-1 gap-7 md:mt-52 mt-60 md:px-0 px-3 md:w-11/12 mx-auto "
     >
       <div>
-        <h1 className="md:text-4xl text-3xl font-black b1 mt-10">
+        <h2 className="md:text-4xl text-3xl font-black b1 mt-10">
           Our Moving & Packing Services in UAE
-        </h1>
+        </h2>
         <p className="b-text mt-3">
           We provide a range of services to help you move from one place to
           another and align to your specific needs.
