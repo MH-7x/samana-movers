@@ -182,7 +182,7 @@ const Navbar = () => {
             </li>
             <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
               <a
-                href="javascript:void(0)"
+                href="/about-us"
                 className="hover:text-[#FCD200] text-[#182937] block font-medium text-[15px]"
               >
                 About Us
