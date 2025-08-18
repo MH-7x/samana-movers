@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localfont from "next/font/local";
 import { Toaster } from "@/components/ui/sonner";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   applicationName: "Samana Movers",
@@ -66,8 +68,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased  ${Roboto.className}`}>
+        <Navbar />
         {children}
-
+        <Footer />
         <Toaster position="top-center" />
       </body>
     </html>

@@ -1,6 +1,6 @@
 import { type Metadata } from "next";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Navbar from "@/components/Navbar";
+
 import HeroSection from "@/components/HeroSection";
 import ContactSection from "@/components/ContactSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -21,7 +21,6 @@ import TestimonialSlider from "@/components/TestimonialsSlider";
 import BlogCard from "@/components/BlogCard";
 import Link from "next/link";
 import { FAQs } from "@/components/FAQs";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = MetadataTemplate({
   data: {
@@ -40,7 +39,6 @@ export const metadata: Metadata = MetadataTemplate({
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="max-w-[1400px] mx-auto">
         <HeroSection />
         <ContactSection />
@@ -455,7 +453,6 @@ export default function Home() {
           <div className="absolute inset-y-0 right-0 w-1/2 b2-bg origin-top-right transform -skew-x-[45deg] -mr-[500px] " />
         </section>
       </main>
-      <Footer />
     </>
   );
 }

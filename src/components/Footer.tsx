@@ -85,7 +85,7 @@ const Footer = () => {
               {[
                 {
                   title: "Movers in Dubai",
-                  link: "/movers-in-sharjah",
+                  link: "/movers-in-dubai",
                 },
                 {
                   title: "Movers in Sharjah",
