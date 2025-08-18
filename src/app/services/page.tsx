@@ -1,11 +1,18 @@
 import ContactSection from "@/components/ContactSection";
 import { services } from "@/components/Services";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import { ArrowUpRightFromSquare, PhoneCall } from "lucide-react";
+import { ArrowUpRightFromSquare, Check, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
+import { ServicesFaqs } from "../../../data";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -181,6 +188,106 @@ const ServicesPage = () => {
           />
         </div>
       </section>
+
+      <div className="mt-32 md:w-11/12 mx-auto md:px-0 px-3 grid md:grid-cols-2 grid-cols-1 gap-16">
+        <div className="relative md:h-auto h-[500px] overflow-hidden">
+          <Image
+            src={"/young-mover-with-packaged-product.jpg"}
+            alt="Moving Services in UAE"
+            fill
+            className="absolute object-cover object-center"
+          />
+          <div className="bg-[#182937]/80 absolute top-0 left-0 w-full h-full p-13">
+            <h3 className="text-3xl md:text-5xl font-black b-white">
+              We Are Expert In Move Your Needs
+            </h3>
+            <ul className="mt-7 text-lg b-white">
+              <li className="flex items-center gap-x-3">
+                <Check className="text-[#fcd200] " />{" "}
+                <span>No Hidden Charges</span>
+              </li>
+              <li className="flex items-center gap-x-3">
+                <Check className="text-[#fcd200] " />{" "}
+                <span>Free Estimates</span>
+              </li>
+              <li className="flex items-center gap-x-3">
+                <Check className="text-[#fcd200] " />{" "}
+                <span>Moving Protection</span>
+              </li>
+              <li className="flex items-center gap-x-3">
+                <Check className="text-[#fcd200] " />{" "}
+                <span>Flexible & Affordable</span>
+              </li>
+              <li className="flex items-center gap-x-3">
+                <Check className="text-[#fcd200] " />{" "}
+                <span>Delivery On Time</span>
+              </li>
+              <li className="flex items-center gap-x-3">
+                <Check className="text-[#fcd200] " />{" "}
+                <span>24 -Hours Emergency Services</span>
+              </li>
+            </ul>
+            <Button
+              size={"lg"}
+              variant={"secondary"}
+              className="mt-7 px-12"
+              callBtn
+            >
+              Call Now
+            </Button>
+          </div>
+          <div className="absolute inset-y-0 right-0  md:w-52 w-32 bg-[#fcd200] origin-top-right transform -skew-x-[36deg] -mr-[360px] " />
+        </div>
+        <div>
+          <p className="b2 font-medium md:text-lg">Clients Inquires</p>
+          <h2 className="text-3xl md:text-4xl font-black b1">
+            Questions Related To Moving
+          </h2>
+          <p className="mt-3 b-text">
+            Having question about your moving in UAE, We got the best answers
+            for you. You can get more details by call us or fill the quote form.
+          </p>
+          <div className=" mt-10">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full"
+              defaultValue="item-1"
+            >
+              {ServicesFaqs.slice(0, 3).map((faq, i) => (
+                <AccordionItem
+                  key={i}
+                  value={faq.value ? faq.value : faq.question}
+                >
+                  <AccordionTrigger className="font-medium text-lg b1">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="flex flex-col gap-1">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </div>
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full md:w-11/12 mx-auto mt-10 grid md:grid-cols-2 md:px-0 px-3 grid-cols-1 gap-5"
+      >
+        {ServicesFaqs.slice(3).map((faq, i) => (
+          <AccordionItem key={i} value={faq.value ? faq.value : faq.question}>
+            <AccordionTrigger className="font-medium text-lg b1">
+              {faq.question}
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-1">
+              {faq.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+
       <section className="mt-32 b1-bg md:px-20 px-3 md:py-0 pt-16 items-center md:gap-0 gap-y-10 min-h-96 grid md:grid-cols-2 relative overflow-hidden">
         <div>
           <h2 className="md:text-4xl text-3xl font-black b-white">

@@ -17,14 +17,18 @@ import { ReactNode } from "react";
 const ContactSection = ({
   title,
   desc,
+  cta,
 }: {
   title?: string;
   desc?: ReactNode;
+  cta?: boolean;
 }) => {
   return (
     <section
       id="contact-section"
-      className="md:w-11/12 mt-32 mx-auto grid md:grid-cols-2 md:gap-x-16 gap-y-16 items-center md:px-0 px-3"
+      className={`md:w-11/12 ${
+        cta ? "mt-10" : "mt-32"
+      } mx-auto grid md:grid-cols-2 md:gap-x-16 gap-y-16 items-center md:px-0 px-3`}
     >
       <div className="">
         <h2 className="b1 font-black md:text-5xl text-3xl">
