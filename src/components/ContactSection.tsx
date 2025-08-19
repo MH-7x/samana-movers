@@ -1,18 +1,7 @@
 import { AlarmCheck, PackageCheckIcon } from "lucide-react";
-import { Input } from "./ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "./ui/select";
-import { DatePicker } from "./ui/DatePicker";
-import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
+
 import { ReactNode } from "react";
+import QuoteForm from "./QuoteForm";
 
 const ContactSection = ({
   title,
@@ -30,7 +19,7 @@ const ContactSection = ({
         cta ? "mt-10" : "mt-32"
       } mx-auto grid md:grid-cols-2 md:gap-x-16 gap-y-16 items-center md:px-0 px-3`}
     >
-      <div className="">
+      <div>
         <h2 className="b1 font-black md:text-5xl text-3xl">
           {title ? title : "Best House Moving Company in Dubai, UAE"}
         </h2>
@@ -67,52 +56,7 @@ const ContactSection = ({
           </div>
         </div>
       </div>
-      <form id="Quote-Form" className="bg-white drop-shadow-xl md:ml-16">
-        <div className="p-5 b1-bg">
-          <h3 className="md:text-3xl text-2xl font-black b-white text-center">
-            Request A Quote
-          </h3>
-        </div>
-        <div className="md:p-10 py-10 px-5 flex flex-col gap-y-5">
-          <Input type="text" placeholder="Your Name" />
-          <Input type="number" placeholder="Phone Number" />
-          <div className="grid grid-cols-2 gap-x-5">
-            <Select name="moving-from">
-              <SelectTrigger className="w-full rounded-none py-[26px]">
-                <SelectValue placeholder="Moving From" />
-              </SelectTrigger>
-              <SelectContent className="rounded-none">
-                <SelectGroup>
-                  <SelectLabel>City</SelectLabel>
-                  <SelectItem value="Dubai">Dubai</SelectItem>
-                  <SelectItem value="Abu Dhabi">Abu Dhabi</SelectItem>
-                  <SelectItem value="Sharjah">Sharjah</SelectItem>
-                  <SelectItem value="Ajman">Ajman</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-            <Select name="moving-to">
-              <SelectTrigger className="w-full rounded-none py-[26px]">
-                <SelectValue placeholder="Moving To" />
-              </SelectTrigger>
-              <SelectContent className="rounded-none">
-                <SelectGroup>
-                  <SelectLabel>City</SelectLabel>
-                  <SelectItem value="Dubai">Dubai</SelectItem>
-                  <SelectItem value="Abu Dhabi">Abu Dhabi</SelectItem>
-                  <SelectItem value="Sharjah">Sharjah</SelectItem>
-                  <SelectItem value="Ajman">Ajman</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </div>
-          <DatePicker />
-          <Textarea placeholder="More Details.." />
-          <Button className="py-7" size={"lg"}>
-            Send Now
-          </Button>
-        </div>
-      </form>
+      <QuoteForm />
     </section>
   );
 };

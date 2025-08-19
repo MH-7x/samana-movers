@@ -7,7 +7,7 @@ export const services = [
   {
     title: "Apartment Moving",
     desc: "Our apartment movers and packers in UAE handle relocations of any size, from studio flats to multi-bedroom units. We pack your belongings securely and move them carefully so you can settle in quickly.",
-    href: "#",
+    href: "/apartment-movers-uae",
     image: {
       src: "/apartment-moving-uae.jpg",
       alt: "Apartment Moving",

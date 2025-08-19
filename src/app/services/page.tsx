@@ -39,9 +39,9 @@ const ServicesPage = () => {
           className="absolute object-cover object-center"
         />
         <div className="flex flex-col items-start justify-center absolute w-full h-full top-0 left-0 bg-gradient-to-r from-white/75 via-white/75 md:via-white/50 md:to-white/25 to-white/50 md:px-20 px-3">
-          <h2 className="b1 font-black md:text-5xl text-3xl max-w-3xl">
+          <h1 className="b1 font-black md:text-5xl text-3xl max-w-3xl">
             Our Moving & Packing Services in UAE - Samana Movers
-          </h2>
+          </h1>
           <p className="mt-5 b-text max-w-2xl md:text-lg">
             At Samana Movers, we provide reliable moving and packing services
             across the UAE. From apartments to villas, our licensed team ensures
