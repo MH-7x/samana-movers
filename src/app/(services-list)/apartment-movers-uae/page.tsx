@@ -233,7 +233,7 @@ const ApartmentMoversUAE = () => {
             <div className="max-w-3xl text-gray-600">
               We believe in clear, upfront pricing so there are no surprises on
               moving day. Our local moving packages start at just{" "}
-              <strong>AED 700</strong>, tailored to your home's size and
+              <strong>AED 700</strong>, tailored to your home&lsquo;s size and
               requirements.
             </div>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
