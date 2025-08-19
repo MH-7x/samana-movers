@@ -4,7 +4,6 @@ import { Resend } from "resend";
 import EmailTemplate from "@/components/EmailTemplate";
 
 export interface SendMailProps {
-  movingType: string;
   movingFrom: string;
   movingTo: string;
   name: string;
@@ -35,13 +34,12 @@ export const SendMail = async ({
 
     const emailResponse = await resend.emails.send({
       from: "New Quote <onboarding@resend.dev>",
-      to: "nicemovers.com@gmail.com",
+      to: "samana.movers@gmail.com",
       subject: "New Moving Quote Request",
       react: EmailTemplate({
         name: data.name,
         Date: new Date(),
         phone: data.phone,
-        movingType: data.movingType,
         movingFrom: data.movingFrom,
         movingTo: data.movingTo,
         message: data.message,

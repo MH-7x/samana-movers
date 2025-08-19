@@ -1,10 +1,4 @@
-import {
-  AlarmClockCheckIcon,
-  Code2,
-  Mail,
-  MapPin,
-  PhoneCallIcon,
-} from "lucide-react";
+import { Code2, Mail, MapPin, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -14,7 +8,7 @@ const Footer = () => {
   return (
     <>
       {" "}
-      <footer className="relative z-10 b1-bg mt-20 pt-20 b-white  lg:pt-[120px] ">
+      <footer className="relative z-10 b1-bg  pt-20 b-white  lg:pt-[120px] ">
         <div className="container md:px-0 px-3 mx-auto">
           <div className="md:-mx-4 -mx-2 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">

@@ -49,7 +49,7 @@ const Star: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
-const Section: React.FC<{
+export const Section: React.FC<{
   id?: string;
   title?: string;
   children: React.ReactNode;
@@ -76,7 +76,7 @@ const Pill: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   </span>
 );
 
-const PricingCard: React.FC<{
+export const PricingCard: React.FC<{
   title: string;
   range: string;
   features: string[];
@@ -163,7 +163,7 @@ const ApartmentMoversUAE = () => {
         </div>
       </section>
 
-      <section className="grid md:grid-cols-3 grid-cols-1 gap-7 items-start mt-32 md:px-0 px-3 md:w-11/12 mx-auto min-h-52">
+      <section className="grid md:grid-cols-3 grid-cols-1 gap-7 items-start mt-32 md:px-0 px-3 md:w-11/12 mx-auto">
         {/* Main Content */}
         <div className="md:col-span-2 col-span-1 b-text">
           {/* Hero */}

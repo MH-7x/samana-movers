@@ -34,13 +34,14 @@ const HeroSection = () => {
             Movers ensures your belongings arrive safely at your new home.
           </p>
         </div>
-        <Button
-          className="mt-8 md:mx-0 mx-auto"
-          size={"lg"}
-          variant={"secondary"}
-        >
-          <Phone /> Call Now{" "}
-        </Button>
+        <div className="flex gap-x-3 mt-8 w-full md:justify-start justify-center">
+          <Button size={"lg"} callBtn variant={"secondary"}>
+            <Phone /> Call Now{" "}
+          </Button>
+          <Button size={"lg"} wtBtn>
+            <Phone /> Get A Quote{" "}
+          </Button>
+        </div>
       </div>
     </section>
   );

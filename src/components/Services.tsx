@@ -10,16 +10,16 @@ export const services = [
     href: "/apartment-movers-uae",
     image: {
       src: "/apartment-moving-uae.jpg",
-      alt: "Apartment Moving",
+      alt: "Apartment Movers in Dubai",
     },
   },
   {
     title: "Villa Moving",
     desc: "For larger homes and villas, our specialized villa movers and packers in UAE provide xcomplete moving solutions. We safely disassemble, pack, and transport your furniture and household items, ensuring nothing is damaged.",
-    href: "#",
+    href: "/villa-movers-in-dubai",
     image: {
       src: "/villa-moving-dubai.jpg",
-      alt: "Apartment Moving",
+      alt: "Villa Movers in Dubai",
     },
   },
   {
@@ -28,7 +28,7 @@ export const services = [
     href: "#",
     image: {
       src: "/local-moving-sharjah-movers.jpg",
-      alt: "Apartment Moving",
+      alt: "Local Moving in Sharjah",
     },
   },
   {
@@ -37,7 +37,7 @@ export const services = [
     href: "#",
     image: {
       src: "/long-distance-moving.jpg",
-      alt: "Apartment Moving",
+      alt: "Long Distance Movers in UAE",
     },
   },
   {
@@ -46,7 +46,7 @@ export const services = [
     href: "#",
     image: {
       src: "/expert-packing-services-uae.jpg",
-      alt: "Apartment Moving",
+      alt: "moving and packing services in uae",
     },
   },
   {
@@ -55,7 +55,7 @@ export const services = [
     href: "#",
     image: {
       src: "/furniture-installation-abu-dhabi.jpg",
-      alt: "Apartment Moving",
+      alt: "furniture installation",
     },
   },
   {
@@ -64,7 +64,7 @@ export const services = [
     href: "#",
     image: {
       src: "/single-item-relocation-dubai.jpg",
-      alt: "Apartment Moving",
+      alt: "single item movers in dubai",
     },
   },
 ];
@@ -83,9 +83,11 @@ const Services = () => {
           We provide a range of services to help you move from one place to
           another and align to your specific needs.
         </p>
-        <Button variant={"secondary"} className="mt-5">
-          View All Services
-        </Button>
+        <Link href={"/services"}>
+          <Button variant={"secondary"} className="mt-5">
+            View All Services
+          </Button>
+        </Link>
         <Image
           src={"/google-reviews-badge.png"}
           alt={"google reviews"}
@@ -116,6 +118,7 @@ const Services = () => {
             <div className="flex items-center justify-start gap-x-3 w-full mt-3">
               <Link
                 href={service.href}
+                title={service.title}
                 className="text-sm text-[#a38906] underline underline-offset-1"
               >
                 Service Details..

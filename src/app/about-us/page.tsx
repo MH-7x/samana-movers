@@ -13,6 +13,7 @@ import React from "react";
 import TestimonialSlider from "@/components/TestimonialsSlider";
 import { FAQs } from "@/components/FAQs";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import Link from "next/link";
 const services = [
   {
     title: "Specialized Residential Movers",
@@ -272,7 +273,9 @@ const About1 = () => {
 
         <ul className="grid md:grid-cols-3 grid-cols-1 gap-10 mt-10">
           <li className="p-5 b2-bg b1 flex flex-col gap-y-3">
-            <h3 className="text-lg font-medium">Apartment Moves</h3>
+            <Link href={"/apartment-movers-uae"}>
+              <h3 className="text-lg font-medium">Apartment Moves</h3>
+            </Link>
             <p className="text-sm">
               {" "}
               Local or inter-emirate relocation for flats and studios, with
@@ -280,7 +283,9 @@ const About1 = () => {
             </p>
           </li>
           <li className="p-5 b2-bg b1 flex flex-col gap-y-3">
-            <h3 className="text-lg font-medium">Villa Moves</h3>
+            <Link href={"/villa-movers-in-dubai"}>
+              <h3 className="text-lg font-medium">Villa Moves</h3>
+            </Link>
             <p className="text-sm">
               Large-scale moves including pool tables, furniture disassembly,
               and estate relocation logistics.

@@ -17,7 +17,7 @@ export interface ContactFormProps {
   name: string;
   Date: Date;
   phone: string;
-  movingType: string;
+
   movingFrom: string;
   movingTo: string;
   message?: string;
@@ -26,7 +26,7 @@ export interface ContactFormProps {
 export const EmailTemplate = ({
   name,
   Date,
-  movingType,
+
   movingFrom,
   movingTo,
   phone,
@@ -66,8 +66,8 @@ export const EmailTemplate = ({
                     textAlign: "center",
                   }}
                 >
-                  Mr. {name} contact you to Move his {movingType} from{" "}
-                  {movingFrom} to {movingTo}.
+                  Mr. {name} contact you to Move from {movingFrom} to {movingTo}
+                  .
                 </Heading>
 
                 <Text style={paragraph}>
@@ -79,15 +79,7 @@ export const EmailTemplate = ({
                   <b>Contact No: </b>
                   {phone}
                 </Text>
-                <Text
-                  style={{
-                    ...paragraph,
-                    marginTop: -5,
-                  }}
-                >
-                  <b>Moving Type: </b>
-                  {movingType}
-                </Text>
+
                 <Text
                   style={{
                     ...paragraph,

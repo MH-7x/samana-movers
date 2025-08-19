@@ -51,7 +51,10 @@ const ServicesPage = () => {
             <Button size={"lg"} callBtn variant={"secondary"}>
               Call Now
             </Button>
-            <Button size={"lg"}>Get A Quote</Button>
+            <Link href={"/contact-us"}>
+              {" "}
+              <Button size={"lg"}>Get A Quote</Button>
+            </Link>
           </div>
         </div>
       </section>

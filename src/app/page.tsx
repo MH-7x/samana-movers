@@ -25,12 +25,12 @@ import { FAQs } from "@/components/FAQs";
 export const metadata: Metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "Movers and Packers | House Shifting Services in UAE",
+      title: "Movers and Packers in UAE | House Shifting Services",
       desc: "Samana Movers is top rated moving company in UAE with over 15+ years of experties in moving with UAE. We offer affordable moving services for homes, offices and single furnitures.",
     },
     image: {
-      path: "/nice-movers-transport-trucks.jpg",
-      alt: "Nice Movers Company Trucks",
+      path: "/local-moving-sharjah-movers.jpg",
+      alt: "Samana Movers Company Trucks",
     },
     path: "",
   },
@@ -69,10 +69,14 @@ export default function Home() {
             </p>
 
             <div className="flex gap-x-5 mt-8 md:justify-start justify-center ">
-              <Button size={"lg"}>ABOUT US</Button>
-              <Button variant={"secondary"} size={"lg"}>
-                GET A QUOTE
-              </Button>
+              <Link href={"/about-us"}>
+                <Button size={"lg"}>ABOUT US</Button>
+              </Link>
+              <Link href={"/contact-us"}>
+                <Button variant={"secondary"} size={"lg"}>
+                  GET A QUOTE
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -255,8 +259,13 @@ export default function Home() {
               Whether day or night, our trained team is ready to handle your
               house shifting with care and efficiency.
             </p>
-            <Button variant={"secondary"} size={"lg"} className="mt-5 px-12">
-              CONTACT US
+            <Button
+              callBtn
+              variant={"secondary"}
+              size={"lg"}
+              className="mt-5 px-12"
+            >
+              CALL NOW
             </Button>
           </div>
           <div className="absolute inset-y-0 right-0 md:w-96 w-32 b2-bg origin-top-right transform -skew-x-[36deg] -mr-[350px] " />
