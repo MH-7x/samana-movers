@@ -289,8 +289,32 @@ const ApartmentMoversUAE = () => {
               services, and volume. Contact us for a personalized quote to get
               the exact price for your move.
             </p>
+            <p className="mt-6 text-sm text-gray-600">
+              For example, a move for a larger two-bedroom apartment typically
+              falls in the AED 1,600-2,500 range. Additional services like
+              packing, heavy lifting, or furniture assembly can affect the final
+              cost. Feel free to reach out and tell us about your move – we’ll
+              tailor a quote that covers all your needs.
+            </p>
           </Section>
 
+          <Section id="moving-solutions" title="Tailored Moving Solutions">
+            <p className="b-text">
+              Every move is unique, and we adapt our service to fit your exact
+              requirements. Whether you need a team to pack everything or just
+              help with loading and transport, we’ve got options for you.
+              Perhaps you prefer to pack some items yourself – that’s fine. Or
+              maybe you have fragile antiques or bulky furniture that need
+              special care – we handle that too
+            </p>
+            <p className="b-text">
+              If you have special items (pianos, artwork, electronics), we use
+              additional padding and crates to keep them safe. All of these
+              specifics are factored into your customized quote, so there are no
+              hidden fees. Simply tell us your moving date and preferences, and
+              we’ll create a plan that fits your timeline and budget.
+            </p>
+          </Section>
           <div className="h-96 relative w-full py-10">
             <Image
               src={"/apartment/packing-services-for-apartment.jpg"}
