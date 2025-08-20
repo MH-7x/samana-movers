@@ -1,8 +1,8 @@
-import QuoteForm from "@/components/QuoteForm";
-import { services } from "@/components/Services";
+import ServiceRighSidebar from "@/components/ServiceRighSidebar";
+
+import StickyMobileCta from "@/components/StickyMobileCta";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import { AlarmCheck, ArrowRightIcon, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -131,14 +131,17 @@ const FAQ: React.FC<{ q: string; a: string }> = ({ q, a }) => (
   </details>
 );
 
+import imageSrc from "../../../../public/apartment/apartment-movers-in-uae.jpg";
 const ApartmentMoversUAE = () => {
   return (
     <main className="max-w-[1400px] mx-auto">
       <section className="w-full h-[500px] relative ">
         <Image
-          src={"/apartment/apartment-movers-in-uae.jpg"}
+          src={imageSrc}
           alt="Apartment Movers in UAE"
           fill
+          placeholder="blur"
+          loading="eager"
           className="absolute object-cover object-center"
         />
         <div className="flex flex-col items-start justify-center absolute w-full h-full top-0 left-0 bg-gradient-to-r from-white/75 via-white/75  md:to-white/25 to-white/50 md:px-20 px-3">
@@ -208,7 +211,6 @@ const ApartmentMoversUAE = () => {
               </div>
             </div>
           </section>
-
           <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="h-96 relative">
               <Image
@@ -227,7 +229,6 @@ const ApartmentMoversUAE = () => {
               />
             </div>
           </div>
-
           {/* Pricing */}
           <Section id="pricing" title="Transparent Pricing for Every Home">
             <div className="max-w-3xl text-gray-600">
@@ -297,7 +298,6 @@ const ApartmentMoversUAE = () => {
               tailor a quote that covers all your needs.
             </p>
           </Section>
-
           <Section id="moving-solutions" title="Tailored Moving Solutions">
             <p className="b-text">
               Every move is unique, and we adapt our service to fit your exact
@@ -369,7 +369,6 @@ const ApartmentMoversUAE = () => {
               ))}
             </div>
           </Section>
-
           {/* Process */}
           <Section title="Our Seamless Moving Process">
             <ol className="grid list-decimal gap-6 pl-5 sm:grid-cols-2 lg:grid-cols-2">
@@ -477,7 +476,6 @@ const ApartmentMoversUAE = () => {
               ))}
             </div>
           </Section>
-
           {/* Testimonials */}
           <Section title="What Customers Say">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -546,7 +544,6 @@ const ApartmentMoversUAE = () => {
               ))}
             </div>
           </Section>
-
           {/* FAQ */}
           <Section title="FAQs">
             <div className="grid gap-4 lg:grid-cols-2">
@@ -584,7 +581,6 @@ const ApartmentMoversUAE = () => {
               />
             </div>
           </Section>
-
           {/* CTA banner */}
           <section className="relative my-10 w-full ">
             <div className="overflow-hidden  b1-bg p-8 text-white shadow sm:p-10">
@@ -615,27 +611,8 @@ const ApartmentMoversUAE = () => {
               </div>
             </div>
           </section>
-
           {/* Sticky mobile CTA */}
-          <div className="fixed inset-x-0 bottom-0 z-40 mx-auto w-full max-w-7xl px-4 pb-4 sm:hidden">
-            <div className="mx-4  border border-[#fcd200] bg-white p-3 shadow-xl">
-              <div className="flex items-center justify-between gap-3">
-                <div className="text-sm">
-                  <div className="font-semibold text-gray-900">
-                    Ready to move?
-                  </div>
-                  <div className="text-gray-600">Free quote • No surprises</div>
-                </div>
-                <a
-                  href="tel:971000000000"
-                  className="inline-flex items-center justify-center rounded-xl b1-bg px-4 py-2 text-sm font-semibold text-white "
-                >
-                  Call Now
-                </a>
-              </div>
-            </div>
-          </div>
-
+          <StickyMobileCta />
           {/* JSON-LD FAQ schema */}
           <script
             type="application/ld+json"
@@ -716,90 +693,7 @@ const ApartmentMoversUAE = () => {
         {/* Main Content */}
 
         {/* Right Sidebar */}
-        <div className="border  col-span-1">
-          <h3 className="text-3xl px-10 pt-10 font-black b1">
-            Our Service Areas
-          </h3>
-          <ul className="mt-5 b-text px-10">
-            <li className="flex items-center gap-x-2 mb-3 hover:underline hover:underline-offset-1">
-              <ArrowRightIcon className="w-4 h-4 b2" />
-              Apartment Movers in Dubai
-            </li>
-            <li className="flex items-center gap-x-2 mb-3 hover:underline hover:underline-offset-1">
-              <ArrowRightIcon className="w-4 h-4 b2" />
-              Apartment Movers in Sharjah
-            </li>
-            <li className="flex items-center gap-x-2 mb-3 hover:underline hover:underline-offset-1">
-              <ArrowRightIcon className="w-4 h-4 b2" />
-              Apartment Movers in Abu Dhabi
-            </li>
-            <li className="flex items-center gap-x-2 mb-3 hover:underline hover:underline-offset-1">
-              <ArrowRightIcon className="w-4 h-4 b2" />
-              Apartment Movers in Ajman
-            </li>
-          </ul>
-          <div className="bg-[#182937] w-full p-10 mt-10 relative">
-            <svg
-              fill="#f2f2f2"
-              viewBox="0 0 1000 1000"
-              xmlns="http://www.w3.org/2000/svg"
-              width={70}
-              height={70}
-              className="mb-7 mx-auto"
-            >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M997 616q-6-69-30-106-24-40-70-46-29-79-88.5-140.5T669 229q-4-2-4-6.5t4-6.5q45-18 72-51t27-73q0-48-40-86-3-4-7.5-1.5T718 11q12 23 12 50 0 33-21 59-19 23-57 44-52 28-111 22-20-2-41-2-89 0-171 38-79 36-138 99.5T103 464q-46 6-70 46Q9 547 3 616q-7 78 22 116 26 34 82 37 38 70 111.5 115.5T384 938q8 1 11 7 6 12 17.5 18.5T437 970h101q19 0 33.5-14.5T586 921t-14-34.5-34-14.5H437q-13 0-24 6.5T396 896q-4 7-13 6-72-10-130.5-45.5T161 765q4-1 7-3 10-2 17.5-44t7.5-101q0-56-6.5-97T170 473q21-75 75-125t140-72q41-10 76-5 41 5 63 32 14 17 14 51 0 23-10 43-4 9 3 16t16 3q31-17 49.5-44.5T615 314q0-12-3.5-24t6-20.5T638 266q70 29 119.5 82.5T829 473q-7 10-11 50t-4 92q0 44 3 79.5t8 53.5q0 6 4 10l1 1q4 5 10 6 12 4 42 4 61 0 90-34 32-37 25-119zM584 758H418q-7 0-10.5 5.5T407 775q10 22 35.5 36.5t58 14.5 58.5-14.5 36-36.5q3-6-1-11.5t-10-5.5zM309 614q0 24 17 41t41 17 40.5-17 16.5-41-16.5-40.5T367 557t-41 16.5-17 40.5zm268 0q0 24 17 41t40.5 17 40.5-17 17-41-17-40.5-40.5-16.5-40.5 16.5-17 40.5z"></path>
-              </g>
-            </svg>
-
-            <h3 className="text-3xl text-center font-black b-white">
-              How We Can Help ?
-            </h3>
-            <ul className="mt-5 b-white text-lg">
-              <li className="flex items-center gap-x-3 mb-2">
-                <Phone strokeWidth={1.2} className="text-[#fcd200] " />{" "}
-                <span>+971 50123456</span>
-              </li>
-              <li className="flex items-center gap-x-3 mb-2">
-                <MapPin strokeWidth={1.2} className="text-[#fcd200] " />{" "}
-                <span>Al Estiqlal Street - Sharjah</span>
-              </li>
-              <li className="flex items-center gap-x-3 mb-2">
-                <AlarmCheck strokeWidth={1.2} className="text-[#fcd200] " />{" "}
-                <span>Open 24 / 7</span>
-              </li>
-            </ul>
-            <Button
-              size={"lg"}
-              variant={"secondary"}
-              className="mt-5 px-12"
-              callBtn
-            >
-              Call Now
-            </Button>
-          </div>
-          <QuoteForm side />
-          <h3 className="text-3xl px-10 pt-5 font-black b1">
-            More Services By Us
-          </h3>
-          <ul className="mt-5 b-text px-10 pb-10">
-            {services.map((service, i) => (
-              <li
-                key={i}
-                className="flex items-center gap-x-2 mb-3 hover:underline hover:underline-offset-1"
-              >
-                <ArrowRightIcon className="w-4 h-4 b2" />
-                {service.title}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ServiceRighSidebar service="Apartment Movers" />
         {/* Right Sidebar */}
       </section>
     </main>

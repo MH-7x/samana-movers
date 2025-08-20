@@ -25,7 +25,7 @@ export const services = [
   {
     title: "Local Moving",
     desc: " Planning a move within the same emirate? Our local moving service offers quick, efficient door-to-door relocation anywhere in Dubai, Abu Dhabi, Sharjah, or Ajman.",
-    href: "#",
+    href: "/local-movers-in-dubai",
     image: {
       src: "/local-moving-sharjah-movers.jpg",
       alt: "Local Moving in Sharjah",
