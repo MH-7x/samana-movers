@@ -40,7 +40,7 @@ const Footer = () => {
                 </Link>
 
                 <Link
-                  href={"mailto:nicemovers.com@gmail.com"}
+                  href={"mailto:samana.movers@gmail.com"}
                   className="flex items-center text-sm font-medium text-dark dark:text-white hover:underline underline-offset-4 transition-colors mt-2"
                 >
                   <Mail
@@ -49,10 +49,10 @@ const Footer = () => {
                     strokeWidth={1.5}
                     className="mr-3 b-white"
                   />
-                  <span>nicemovers.com@gmail.com</span>
+                  <span>samana.movers@gmail.com</span>
                 </Link>
                 <Link
-                  href={"mailto:nicemovers.com@gmail.com"}
+                  href={"mailto:samana.movers@gmail.com"}
                   className="flex items-center text-sm font-medium text-dark dark:text-white hover:underline underline-offset-4 transition-colors mt-2"
                 >
                   <MapPin
@@ -79,19 +79,19 @@ const Footer = () => {
               {[
                 {
                   title: "Movers in Dubai",
-                  link: "/movers-in-dubai",
+                  link: "#",
                 },
                 {
                   title: "Movers in Sharjah",
-                  link: "/movers-in-sharjah",
+                  link: "#",
                 },
                 {
                   title: "Movers in Abu Dhabi",
-                  link: "/movers-in-abu-dhabi",
+                  link: "#",
                 },
                 {
                   title: "Movers in Ajman",
-                  link: "/movers-in-Ajman",
+                  link: "#",
                 },
               ].map((loc) => (
                 <NavLink key={loc.link} link={loc.link} label={loc.title} />
@@ -172,7 +172,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-sm text-gray-400">
-                  &copy; {new Date().getFullYear()} Nice Movers LLC. All Rights
+                  &copy; {new Date().getFullYear()} Samana Movers. All Rights
                   Reserved.
                 </p>
                 <p className="text-sm text-gray-400 flex items-center mt-1 gap-x-2">

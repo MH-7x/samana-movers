@@ -26,7 +26,7 @@ export const metadata: Metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in UAE | House Shifting Services",
-      desc: "Samana Movers is top rated moving company in UAE with over 15+ years of experties in moving with UAE. We offer affordable moving services for homes, offices and single furnitures.",
+      desc: "Samana Movers is top rated moving company in UAE with over 15+ years of expertise in moving with UAE. We offer affordable moving services for homes, offices and single furnitures.",
     },
     image: {
       path: "/local-moving-sharjah-movers.jpg",
@@ -324,9 +324,12 @@ export default function Home() {
                 Latest News
               </h2>
             </div>
-            <Button variant={"secondary"} size={"lg"} className="md:px-12">
-              ALL NEWS
-            </Button>
+            <Link href={"/blogs"}>
+              {" "}
+              <Button variant={"secondary"} size={"lg"} className="md:px-12">
+                ALL NEWS
+              </Button>
+            </Link>
           </div>
           <div className="mt-16 grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-y-10">
             <div className="col-span-2 grid md:grid-cols-2 grid-cols-1 gap-10">
@@ -372,66 +375,328 @@ export default function Home() {
         <FAQs
           faqs={[
             {
-              question: "How far in advance should I schedule my move?",
+              question:
+                "How much do movers and packers charge in Dubai and UAE?",
               answer: (
                 <>
                   <p>
-                    We recommend booking at least 1–2 weeks before your desired
-                    moving date. This gives us time to secure the moving date
-                    and prepare our team.
+                    The cost of professional movers and packers in UAE typically
+                    ranges from AED 500 to AED 1500 for local moves within the
+                    city, depending on several factors.
                   </p>
                   <p>
-                    We also try to accommodate urgent moves on shorter notice
-                    whenever possible.
+                    At Samana Movers, we provide transparent, competitive
+                    pricing based on your specific requirements including
+                    apartment size, distance, number of items, and additional
+                    services needed. We offer free quotations with no hidden
+                    charges, ensuring you get the best value for your money.
                   </p>
                 </>
               ),
             },
             {
-              question: "Do you provide packing materials and services?",
+              question:
+                "What services do professional movers and packers in UAE provide?",
               answer: (
                 <>
                   <p>
-                    Yes. We offer full packing services in the UAE. Our movers
-                    come with high-quality boxes, bubble wrap, and tape to
-                    protect your items.
+                    Professional moving companies in UAE offer comprehensive
+                    relocation solutions. At Samana Movers, our services
+                    include:
+                  </p>
+                  <ul>
+                    <li>Professional packing using high-quality materials</li>
+                    <li>Safe loading and unloading</li>
+                    <li>Secure transportation with GPS-tracked vehicles</li>
+                    <li>Furniture dismantling and reassembly</li>
+                    <li>Unpacking and arrangement at your new location</li>
+                    <li>Storage solutions for short and long-term needs</li>
+                    <li>Special handling for fragile and valuable items</li>
+                    <li>Post-move cleaning services</li>
+                  </ul>
+                </>
+              ),
+            },
+            {
+              question:
+                "Do movers and packers in UAE provide insurance for damaged items?",
+              answer: (
+                <>
+                  <p>
+                    Yes, reputable moving companies offer comprehensive
+                    insurance coverage. At Samana Movers, we prioritize the
+                    safety of your belongings with full insurance options,
+                    giving you complete peace of mind.
                   </p>
                   <p>
-                    If you prefer, you can pack some belongings yourself and
-                    we’ll handle the rest.
+                    Our trained professionals handle your items with utmost
+                    care, but in the rare event of damage, you&lsquo;re fully
+                    protected.
                   </p>
                 </>
               ),
             },
             {
-              question: "Is Samana Movers insured?",
+              question:
+                "How far in advance should I book movers and packers in Dubai?",
               answer: (
                 <>
                   <p>
-                    Absolutely. All moves include basic insurance at no extra
-                    cost. You can also purchase additional insurance for
-                    valuable items.
+                    For the best availability and rates, we recommend booking
+                    your moving service at least 2-3 weeks in advance,
+                    especially during peak moving seasons.
                   </p>
                   <p>
-                    If any damage occurs, file a claim with us and we will
-                    handle it promptly and professionally
+                    However, Samana Movers also offers emergency moving services
+                    and can often accommodate last-minute requests.
                   </p>
                 </>
               ),
             },
             {
-              question: "What items can’t be moved by Samana Movers?",
+              question:
+                "What packing materials do movers use to protect my belongings?",
               answer: (
                 <>
                   <p>
-                    We move almost all household items, but for safety and legal
-                    reasons we cannot transport hazardous materials (like
-                    flammables, chemicals, or gases).
+                    At Samana Movers, we utilize premium packing materials,
+                    including:
+                  </p>
+                  <ul>
+                    <li>Double-walled corrugated boxes in various sizes</li>
+                    <li>Premium bubble wrap for fragile items</li>
+                    <li>Stretch film for furniture protection</li>
+                    <li>Moving blankets for large items</li>
+                    <li>Special wardrobe boxes for clothes</li>
+                    <li>Custom crating for artwork and antiques</li>
+                  </ul>
+                  <p>
+                    All packing materials are included in our moving packages –
+                    no hidden costs!
+                  </p>
+                </>
+              ),
+            },
+            {
+              question:
+                "Can movers and packers handle office relocation in UAE?",
+              answer: (
+                <>
+                  <p>
+                    Absolutely! Samana Movers specializes in both residential
+                    and commercial relocations. Our office moving services
+                    include:
+                  </p>
+                  <ul>
+                    <li>
+                      Minimal business disruption with weekend/after-hours moves
+                    </li>
+                    <li>IT equipment handling and setup</li>
+                    <li>Secure document transportation</li>
+                    <li>Furniture dismantling and installation</li>
+                    <li>Floor planning assistance</li>
+                    <li>Employee workstation relocation</li>
+                  </ul>
+                </>
+              ),
+            },
+            {
+              question:
+                "Do you offer same-day moving services in Dubai and Abu Dhabi?",
+              answer: (
+                <>
+                  <p>
+                    Yes, Samana Movers provides emergency same-day moving
+                    services across UAE for urgent relocation needs. Our rapid
+                    response team is equipped to handle last-minute moves
+                    efficiently without compromising quality.
                   </p>
                   <p>
-                    We also advise you to carry valuables (cash, jewelry) with
-                    you. Just ask us if you’re unsure about any specific item.
+                    While same-day services are subject to availability, we
+                    maintain a large fleet and professional crew to accommodate
+                    urgent requests.
                   </p>
+                </>
+              ),
+            },
+            {
+              question:
+                "What items are not allowed to be moved by packers and movers in UAE?",
+              answer: (
+                <>
+                  <p>
+                    For safety and legal compliance, certain items cannot be
+                    transported:
+                  </p>
+                  <ul>
+                    <li>Hazardous materials (chemicals, paints, gasoline)</li>
+                    <li>Perishable foods</li>
+                    <li>Plants (require special permits)</li>
+                    <li>Pets (need specialized pet relocation services)</li>
+                    <li>Jewelry and cash (recommend personal transport)</li>
+                    <li>Important documents (passports, certificates)</li>
+                    <li>Firearms and ammunition</li>
+                  </ul>
+                </>
+              ),
+            },
+            {
+              question:
+                "How long does it take to complete a house move in Dubai?",
+              answer: (
+                <>
+                  <p>The duration depends on the size of the move:</p>
+                  <ul>
+                    <li>Studio apartment: 2-4 hours</li>
+                    <li>1-2 bedroom apartment: 4-6 hours</li>
+                    <li>3-4 bedroom villa: 6-10 hours</li>
+                    <li>Large villa: 1-2 days</li>
+                  </ul>
+                  <p>
+                    At Samana Movers, our efficient team ensures timely
+                    completion with minimal disruption.
+                  </p>
+                </>
+              ),
+            },
+            {
+              question:
+                "Do movers and packers provide storage facilities in UAE?",
+              answer: (
+                <>
+                  <p>
+                    Yes, Samana Movers provides secure and flexible storage
+                    solutions in Abu Dhabi and Dubai. Our facilities include:
+                  </p>
+                  <ul>
+                    <li>Climate-controlled storage units</li>
+                    <li>24/7 security surveillance</li>
+                    <li>Flexible rental periods (daily, weekly, monthly)</li>
+                    <li>Various unit sizes</li>
+                    <li>Easy access to your belongings</li>
+                    <li>Inventory management systems</li>
+                  </ul>
+                </>
+              ),
+            },
+            {
+              question:
+                "Are there female packers available for moving services in UAE?",
+              answer: (
+                <>
+                  <p>
+                    Yes, Samana Movers provides female packing staff upon
+                    request. Our lady packers are trained to handle all
+                    household items with special attention to personal
+                    belongings, clothing, and delicate items.
+                  </p>
+                  <p>
+                    This service is particularly popular among families and
+                    ensures comfort during the packing process.
+                  </p>
+                </>
+              ),
+            },
+            {
+              question: "What is the best time of year to move in UAE?",
+              answer: (
+                <>
+                  <p>The optimal moving periods in UAE are:</p>
+                  <ul>
+                    <li>
+                      <strong>October to April</strong>: Cooler weather, easier
+                      moving conditions
+                    </li>
+                    <li>
+                      <strong>Weekdays</strong>: Lower rates, better
+                      availability
+                    </li>
+                    <li>
+                      <strong>Avoid month-end</strong>: High demand periods
+                    </li>
+                  </ul>
+                  <p>
+                    Samana Movers operates year-round with climate-controlled
+                    vehicles and offers off-season discounts during summer.
+                  </p>
+                </>
+              ),
+            },
+            {
+              question:
+                "Can movers help with international relocation from UAE?",
+              answer: (
+                <>
+                  <p>
+                    Yes, Samana Movers facilitates international relocations
+                    with comprehensive services including:
+                  </p>
+                  <ul>
+                    <li>Custom clearance assistance</li>
+                    <li>International packing standards</li>
+                    <li>Air and sea freight options</li>
+                    <li>Documentation support</li>
+                    <li>Door-to-door delivery</li>
+                    <li>Tracking systems</li>
+                    <li>Partner networks worldwide</li>
+                  </ul>
+                </>
+              ),
+            },
+            {
+              question: "How can I prepare for the movers and packers arrival?",
+              answer: (
+                <>
+                  <p>To ensure a smooth moving day, here are some tips:</p>
+                  <ul>
+                    <li>Create an inventory list</li>
+                    <li>Separate items you&lsquo;ll carry personally</li>
+                    <li>Defrost and clean refrigerator 24 hours prior</li>
+                    <li>Backup computer data</li>
+                    <li>Label boxes for fragile items</li>
+                    <li>Clear pathways for easy access</li>
+                    <li>Arrange parking permits if needed</li>
+                    <li>Keep children and pets secure</li>
+                  </ul>
+                </>
+              ),
+            },
+            {
+              question:
+                "Why should I choose professional movers instead of doing it myself?",
+              answer: (
+                <>
+                  <p>Hiring Samana Movers offers significant advantages:</p>
+                  <ul>
+                    <li>
+                      <strong>Save Time</strong>: Complete move in hours vs.
+                      days
+                    </li>
+                    <li>
+                      <strong>Prevent Injuries</strong>: Professional equipment
+                      and techniques
+                    </li>
+                    <li>
+                      <strong>Insurance Protection</strong>: Full coverage for
+                      your belongings
+                    </li>
+                    <li>
+                      <strong>Cost-Effective</strong>: No hidden costs for truck
+                      rental, fuel, materials
+                    </li>
+                    <li>
+                      <strong>Stress-Free</strong>: We handle everything while
+                      you relax
+                    </li>
+                    <li>
+                      <strong>Professional Expertise</strong>: Experienced
+                      handling of all item types
+                    </li>
+                    <li>
+                      <strong>Single Point of Contact</strong>: One company,
+                      complete accountability
+                    </li>
+                  </ul>
                 </>
               ),
             },

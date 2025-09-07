@@ -17,7 +17,7 @@ export const metadata = MetadataTemplate({
     },
     path: "/long-distance-movers-dubai",
     image: {
-      path: "long-distance/Samana-Movers-Hero-Dubai.jpg",
+      path: "/long-distance/Samana-Movers-Hero-Dubai.jpg",
       alt: "Samana Movers Dubai professional moving team carrying sofa — branded truck visible",
     },
   },

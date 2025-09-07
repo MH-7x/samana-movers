@@ -1,11 +1,5 @@
 import ContactSection from "@/components/ContactSection";
 import { services } from "@/components/Services";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { ArrowUpRightFromSquare, Check, PhoneCall } from "lucide-react";
@@ -251,45 +245,43 @@ const ServicesPage = () => {
             for you. You can get more details by call us or fill the quote form.
           </p>
           <div className=" mt-10">
-            <Accordion
-              type="single"
-              collapsible
-              className="w-full"
-              defaultValue="item-1"
-            >
-              {ServicesFaqs.slice(0, 3).map((faq, i) => (
-                <AccordionItem
-                  key={i}
-                  value={faq.value ? faq.value : faq.question}
-                >
-                  <AccordionTrigger className="font-medium text-lg b1">
+            {ServicesFaqs.slice(0, 3).map((faq, i) => (
+              <details
+                key={i}
+                className="group  rounded-lg p-4 "
+                open={i === 0}
+              >
+                <summary className="flex justify-between items-center cursor-pointer  font-medium text-gray-700">
+                  <h3 className="md:text-lg col-span-6 text-base">
                     {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="flex flex-col gap-1">
+                  </h3>
+                </summary>
+                <div className="mt-2 ">
+                  <div className="md:text-base text-sm flex flex-col gap-y-1 ans">
                     {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+                  </div>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </div>
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full md:w-11/12 mx-auto mt-10 grid md:grid-cols-2 md:px-0 px-3 grid-cols-1 gap-5"
-      >
+      <div className="w-full md:w-11/12 mx-auto mt-10 grid md:grid-cols-2 md:px-0 px-3 grid-cols-1 gap-5">
         {ServicesFaqs.slice(3).map((faq, i) => (
-          <AccordionItem key={i} value={faq.value ? faq.value : faq.question}>
-            <AccordionTrigger className="font-medium text-lg b1">
-              {faq.question}
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-1">
-              {faq.answer}
-            </AccordionContent>
-          </AccordionItem>
+          <details key={i} className="group  rounded-lg p-4 border-b">
+            <summary className="flex justify-between items-center cursor-pointer  font-medium text-gray-700">
+              <h3 className="md:text-lg col-span-6 text-base">
+                {faq.question}
+              </h3>
+            </summary>
+            <div className="mt-2 ">
+              <div className="md:text-base text-sm flex flex-col gap-y-1 ans">
+                {faq.answer}
+              </div>
+            </div>
+          </details>
         ))}
-      </Accordion>
+      </div>
 
       <section className="mt-32 b1-bg md:px-20 px-3 md:py-0 pt-16 items-center md:gap-0 gap-y-10 min-h-96 grid md:grid-cols-2 relative overflow-hidden">
         <div>

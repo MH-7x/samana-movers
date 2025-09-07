@@ -4,6 +4,7 @@ import localfont from "next/font/local";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StickyMobileCta from "@/components/StickyMobileCta";
 
 export const metadata: Metadata = {
   applicationName: "Samana Movers",
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body className={`antialiased  ${Roboto.className}`}>
         <Navbar />
         {children}
+        <StickyMobileCta />
         <Footer />
         <Toaster position="top-center" />
       </body>

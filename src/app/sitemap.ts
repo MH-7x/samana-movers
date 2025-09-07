@@ -48,6 +48,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       images: [`${APP.url}/luxury-item-handling.jpg`],
     },
+    {
+      url: `${APP.url}/long-distance-movers-dubai`,
+      lastModified: today,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      images: [`${APP.url}/long-distance/Samana-Movers-Hero-Dubai.jpg`],
+    },
     
   ]
 }

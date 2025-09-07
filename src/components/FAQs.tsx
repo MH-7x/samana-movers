@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { ReactNode } from "react";
 
 interface FAQProps {
@@ -18,23 +12,28 @@ export function FAQs({ faqs }: { faqs: FAQProps[] }) {
         Frequently Asked Questions
       </h2>
       <div className="max-w-3xl mx-auto mt-10">
-        {faqs.map((faq, i) => (
-          <Accordion
-            key={i}
-            type="single"
-            collapsible
-            className="w-full"
-            defaultValue="item-1"
+        {faqs.map((faq, index) => (
+          <details
+            key={index}
+            className="group  rounded-lg p-4 "
+            open={index === 0}
           >
-            <AccordionItem value={faq.question}>
-              <AccordionTrigger className="md:text-xl text-lg">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="flex flex-col gap-2 b-text  text-base">
+            <summary className="flex justify-between items-center cursor-pointer  font-medium text-gray-700">
+              <div className="w-full grid grid-cols-7 items-center space-x-3">
+                <div className="w-10 col-span-1 h-10 flex items-center justify-center rounded-full b1-bg b2 text-xl ">
+                  ?
+                </div>
+                <h3 className="md:text-lg col-span-6 text-base">
+                  {faq.question}
+                </h3>
+              </div>
+            </summary>
+            <div className="mt-4 md:pl-11 pl-7 pr-4 py-2 bg-[#fcd200]/10 text-gray-700 border-l-4 border-secondary">
+              <div className="md:text-base text-sm flex flex-col gap-y-1 ans">
                 {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+              </div>
+            </div>
+          </details>
         ))}
       </div>
     </section>

@@ -1,6 +1,5 @@
 import ServiceRighSidebar from "@/components/ServiceRighSidebar";
 
-import StickyMobileCta from "@/components/StickyMobileCta";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Image from "next/image";
@@ -611,9 +610,7 @@ const ApartmentMoversUAE = () => {
               </div>
             </div>
           </section>
-          {/* Sticky mobile CTA */}
-          <StickyMobileCta />
-          {/* JSON-LD FAQ schema */}
+          {/* Sticky mobile CTA */}c{/* JSON-LD FAQ schema */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{

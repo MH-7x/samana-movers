@@ -48,7 +48,7 @@ const services = [
   },
 ];
 
-const stats = [
+export const stats = [
   { label: "Satisfied Customers", value: "99%" },
   { label: "Successful Moves", value: "1000+" },
   { label: "On-Time Deliveries", value: "95%" },

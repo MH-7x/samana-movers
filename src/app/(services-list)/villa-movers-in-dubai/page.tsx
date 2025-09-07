@@ -10,7 +10,6 @@ import { FAQs } from "@/components/FAQs";
 import ServiceRighSidebar from "@/components/ServiceRighSidebar";
 
 import imageSrc from "../../../../public/villa/hero-samana-movers-team.jpg";
-import StickyMobileCta from "@/components/StickyMobileCta";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -525,7 +524,6 @@ const VillaMoversDubai = () => {
               stressful” and can lower costs overall.
             </p>
           </Section>
-          <StickyMobileCta />
         </div>
         {/* Right Sidebar */}
         <ServiceRighSidebar service="Villa Movers" />
