@@ -666,9 +666,12 @@ const About1 = () => {
             Sharjah, Dubai, Abu Dhabi, or Ajman, call or WhatsApp us now for a
             free moving quote.
           </p>
-          <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
-            CALL TO MOVERS : <span className="b2">(+971) 50123456</span>
-          </h3>
+          <Link href={"tel:+971563560017"}>
+            {" "}
+            <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
+              CALL TO MOVERS : <span className="b2">(+971) 56356017</span>
+            </h3>
+          </Link>
         </div>
         <div className="z-20 relative md:h-[420px] h-96">
           <Image

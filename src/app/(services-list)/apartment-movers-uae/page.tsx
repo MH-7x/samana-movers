@@ -119,7 +119,7 @@ export const PricingCard: React.FC<{
   </div>
 );
 
-const FAQ: React.FC<{ q: string; a: string }> = ({ q, a }) => (
+export const FAQ: React.FC<{ q: string; a: string }> = ({ q, a }) => (
   <details className="group rounded-xl border border-gray-200 bg-white p-4 open:">
     <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
       <h3 className="text-base font-semibold text-gray-900">{q}</h3>

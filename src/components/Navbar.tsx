@@ -39,7 +39,9 @@ const Navbar = () => {
               className="md:w-5 w-4 md:h-5 h-4 fill-[#F2F2F2]"
               strokeWidth={0.5}
             />
-            <p className="font-medium">+971 56 356017</p>
+            <Link href="tel:+97156356017" className="font-medium">
+              +971 56 356017
+            </Link>
           </div>{" "}
           <div className="flex items-center gap-2 md:text-sm text-xs">
             <MapPin className="md:w-5 w-4 md:h-5 h-4 " />
@@ -123,8 +125,9 @@ const Navbar = () => {
         <Link href={"/"} title="Company Logo" className="relative w-56 h-12 ">
           <Image
             src={"/logo-cropped.svg"}
-            alt="Company Logo"
+            alt="Samana Movers and packers in UAE"
             fill
+            loading="eager"
             className="absolute object-contain object-center"
           />
         </Link>
@@ -158,7 +161,7 @@ const Navbar = () => {
               <Link href={"/"} className="  ">
                 <Image
                   src={"/logo-cropped.svg"}
-                  alt="Company Logo"
+                  alt="Samana Movers and packers in uae logo"
                   fill
                   className="object-contain absolute object-center"
                 />
@@ -206,9 +209,12 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Button className="lg:flex hidden">
-          <CalendarCheck /> Book Online
-        </Button>
+        <Link href={"/contact-us"}>
+          {" "}
+          <Button className="lg:flex hidden">
+            <CalendarCheck /> Book Online
+          </Button>
+        </Link>
         <div className="flex max-lg:ml-auto lg:hidden">
           <button id="toggleOpen" className="lg:hidden cursor-pointer">
             <svg

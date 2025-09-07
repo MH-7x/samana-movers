@@ -34,7 +34,7 @@ export const services = [
   {
     title: "Long-Distance Moving",
     desc: " Moving across emirates? We handle long-distance moves throughout the xUAE with care. Your belongings are protected during the entire journey, from pickup to delivery. ",
-    href: "#",
+    href: "/long-distance-movers-dubai",
     image: {
       src: "/long-distance-moving.jpg",
       alt: "Long Distance Movers in UAE",

@@ -2,27 +2,28 @@ import ContactSection from "@/components/ContactSection";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 const contacts = [
   {
     icon: <MapPin className="w-8 h-8 text-darkBlue" strokeWidth={1.2} />,
     title: "Our Office",
-    desc: "Simpang Dewa Ruci ST.1760, VIC 8811, Denpasar, Bali",
+    desc: "Al Estiqlal Street, Abu Shagara - Sharjah",
   },
   {
     icon: <Phone className="w-8 h-8 text-darkBlue" strokeWidth={1.2} />,
     title: "Call Us",
-    desc: "+(62) 800-567-8990\n1120-7789",
+    desc: "+971 56 356017",
   },
   {
     icon: <Mail className="w-8 h-8 text-darkBlue" strokeWidth={1.2} />,
     title: "Email Us",
-    desc: "moverie@domain.com\nsupport@domain.com",
+    desc: "samana.movers@gmail.com",
   },
   {
     icon: <Clock className="w-8 h-8 text-darkBlue" strokeWidth={1.2} />,
     title: "Work Hours",
-    desc: "Open 27/7 \nService Any Time",
+    desc: "Open 24/7 \nService Any Time",
   },
 ];
 
@@ -97,9 +98,12 @@ const ContactUsPage = () => {
             WhatsApp us today to get a free quote from the leading movers and
             packers in the UAE.
           </p>
-          <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
-            CALL TO MOVERS : <span className="b2">(+971) 50123456</span>
-          </h3>
+          <Link href={"tel:+971563560017"}>
+            {" "}
+            <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
+              CALL TO MOVERS : <span className="b2">(+971) 56356017</span>
+            </h3>
+          </Link>
         </div>
         <div className="z-20 relative md:h-[420px] h-96">
           <Image
