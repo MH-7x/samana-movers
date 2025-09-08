@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const GA_TRACKING_ID = "G-S4S471491Q"; // Replace with your actual ID
+const GA_TRACKING_ID = "G-H5FXY75LDQ"; // Replace with your actual ID
 
 const GoogleAnalytics = () => {
   return (

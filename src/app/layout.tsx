@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyMobileCta from "@/components/StickyMobileCta";
 import Script from "next/script";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   applicationName: "Samana Movers",
@@ -109,6 +110,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <GoogleAnalytics />
       </head>
       <body className={`antialiased  ${Roboto.className}`}>
         <Navbar />
