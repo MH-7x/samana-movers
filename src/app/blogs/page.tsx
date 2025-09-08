@@ -18,7 +18,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Our Blogs - Samana Movers",
-      desc: "Stay informed with our expert tips and insights on moving and packing services in the UAE. Read our blog posts to learn about the latest trends, tips, and tricks for a stress-free relocation experience.",
+      desc: "Samana Movers blog — expert moving & packing tips for UAE relocations. Checklists and packing guides to make your move stress-free.",
     },
     image: {
       alt: "Our Blogs - Samana Movers",

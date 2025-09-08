@@ -10,7 +10,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Apartment Movers in UAE  | Starting at 700 AED",
-      desc: "rusted apartment movers in UAE — Samana Movers. Licensed, affordable packing, dismantle/rebuild, storage & same-day moves across Dubai, Sharjah & Abu Dhabi. Free quote.",
+      desc: "Apartment movers in UAE — licensed, affordable packing, dismantle/rebuild & storage. Fast apartment moves across Dubai, Sharjah & Abu Dhabi.",
     },
     path: "/apartment-movers-uae",
     image: {

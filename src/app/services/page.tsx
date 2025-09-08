@@ -14,7 +14,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Moving Services in UAE | Samana Movers",
-      desc: "We offer a wide range of moving services in UAE, including apartments, villas, and single furnitures. Our experienced team ensures a smooth and stress-free relocation process.",
+      desc: "Moving services in UAE — professional apartment, villa & furniture movers. Insured teams, careful packing, storage options. Get a free quote.",
     },
     path: "/services",
     image: {

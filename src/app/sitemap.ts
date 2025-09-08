@@ -42,6 +42,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: [`${APP.url}/apartment-moving-crew.jpg`],
     },
     {
+      url: `${APP.url}/local-movers-in-dubai`,
+      lastModified: today,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      images: [`${APP.url}/Our-Local-Moving-Services.jpg`],
+    },
+    {
       url: `${APP.url}/villa-movers-in-dubai`,
       lastModified: today,
       changeFrequency: 'monthly',

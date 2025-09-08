@@ -33,7 +33,7 @@ export const metadata = MetadataTemplate({
     meta: {
       title:
         "Contact Samana Movers | Residential Moving Services in Sharjah & UAE",
-      desc: "Get in touch with Samana Movers for trusted residential moving services in Sharjah, Dubai, Abu Dhabi & across the UAE. Call, WhatsApp, or email us today for a free moving quote.",
+      desc: "Contact Samana Movers — trusted residential movers in Sharjah, Dubai & Abu Dhabi. Call or WhatsApp for a free quote.",
     },
     path: "/contact-us",
     image: {
@@ -76,6 +76,7 @@ const ContactUsPage = () => {
       </Script>
       <main className="max-w-[1400px] mx-auto">
         <ContactSection
+          h1
           cta
           title="Get A Moving Quote From Samana Movers"
           desc={

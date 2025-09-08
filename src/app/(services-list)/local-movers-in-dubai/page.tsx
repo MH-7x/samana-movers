@@ -4,7 +4,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Local Movers in Dubai | Apartment & Villa Movers",
-      desc: "Looking for reliable local movers in Dubai? Samana Movers offers licensed, insured apartment & villa moves, transparent pricing, free quotes & same-day availability. Get an instant estimate.",
+      desc: "Local movers in Dubai — licensed, insured apartment & villa movers. Transparent pricing, free quotes & same-day availability. Get an instant estimate.",
     },
     path: "/local-movers-in-dubai",
     image: {

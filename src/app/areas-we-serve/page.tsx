@@ -15,7 +15,7 @@ export const metadata = MetadataTemplate({
       title: "Movers and Packers in UAE | Moving Services in All Emirates",
       desc: "Complete relocation solutions across Dubai, Abu Dhabi, Sharjah & Ajman. Professional house & office moving, packing services. 24/7 support available",
     },
-    path: "/movers-and-packers-uae",
+    path: "/areas-we-serve",
     image: {
       alt: "Movers and Packers in UAE | Moving Services in All Emirates",
       path: "/location/movers-and-packers-in-uae.jpg",

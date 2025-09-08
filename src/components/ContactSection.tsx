@@ -7,10 +7,12 @@ const ContactSection = ({
   title,
   desc,
   cta,
+  h1,
 }: {
   title?: string;
   desc?: ReactNode;
   cta?: boolean;
+  h1?: boolean;
 }) => {
   return (
     <section
@@ -20,9 +22,15 @@ const ContactSection = ({
       } mx-auto grid md:grid-cols-2 md:gap-x-16 gap-y-16 items-center md:px-0 px-3`}
     >
       <div>
-        <h2 className="b1 font-black md:text-5xl text-3xl">
-          {title ? title : "Best House Moving Company in Dubai, UAE"}
-        </h2>
+        {h1 ? (
+          <h1 className="b1 font-black md:text-5xl text-3xl">
+            {title ? title : "Best House Moving Company in Dubai, UAE"}
+          </h1>
+        ) : (
+          <h2 className="b1 font-black md:text-5xl text-3xl">
+            {title ? title : "Best House Moving Company in Dubai, UAE"}
+          </h2>
+        )}
         <div className="md:mt-8 mt-5 b-text">
           {desc ? (
             desc
