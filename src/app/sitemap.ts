@@ -56,5 +56,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: [`${APP.url}/long-distance/Samana-Movers-Hero-Dubai.jpg`],
     },
     
+    {
+      url: `${APP.url}/areas-we-serve`,
+      lastModified: today,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      images: [`${APP.url}/location/two-movers-with-boxs-in-hand.jpg`],
+    },
+    {
+      url: `${APP.url}/blogs`,
+      lastModified: today,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      images: [`${APP.url}/samana-movers-blogs.jpg`],
+    },
+    
   ]
 }

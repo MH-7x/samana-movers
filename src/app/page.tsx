@@ -21,12 +21,14 @@ import TestimonialSlider from "@/components/TestimonialsSlider";
 import BlogCard from "@/components/BlogCard";
 import Link from "next/link";
 import { FAQs } from "@/components/FAQs";
+import Script from "next/script";
+import { homeFaqs } from "@/lib/raws";
 
 export const metadata: Metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in UAE | House Shifting Services",
-      desc: "Samana Movers is top rated moving company in UAE with over 15+ years of expertise in moving with UAE. We offer affordable moving services for homes, offices and single furnitures.",
+      desc: "We are trusted movers and packers in UAE with 15+ years of expertise, providing affordable moving services for homes, offices, and single furniture.",
     },
     image: {
       path: "/local-moving-sharjah-movers.jpg",
@@ -39,6 +41,37 @@ export const metadata: Metadata = MetadataTemplate({
 export default function Home() {
   return (
     <>
+      <Script
+        id="breadcrumb"
+        strategy="beforeInteractive"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.samanamoversuae.com/",
+              },
+            ],
+          }),
+        }}
+      >
+        {" "}
+      </Script>
+      <Script
+        strategy="beforeInteractive"
+        id="faqs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homeFaqs),
+        }}
+      >
+        {" "}
+      </Script>
       <main className="max-w-[1400px] mx-auto">
         <HeroSection />
         <ContactSection />

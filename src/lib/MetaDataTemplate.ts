@@ -30,7 +30,7 @@ export default  function MetadataTemplate({data}: {
       description: data.meta.desc,
       type: "website",
       countryName: "United Arab Emairtes",
-      emails: ["nicemovers.com@gmail.com"],
+      emails: ["samana.movers@gmail.com"],
       phoneNumbers: [APP.phone],
       siteName: APP.name,
     },

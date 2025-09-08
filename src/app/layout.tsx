@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyMobileCta from "@/components/StickyMobileCta";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   applicationName: "Samana Movers",
@@ -68,6 +69,68 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="Schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MovingCompany",
+              name: "Samana Movers",
+              url: "https://www.samanamoversuae.com/",
+              logo: "https://www.samanamoversuae.com/logo-cropped.svg",
+              image:
+                "https://www.samanamoversuae.com/ocal-moving-sharjah-movers-2.jpg",
+              priceRange: "AED 1000 - 6000",
+              telephone: "+971 56 356017",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Al Estiqlal Street",
+                addressLocality: "Sharjah",
+                postalCode: "00000",
+                addressCountry: "AE",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+971 56 356017",
+                contactType: "Customer Service",
+                areaServed: "AE",
+                availableLanguage: ["English", "Arabic"],
+              },
+              sameAs: [
+                "https://www.facebook.com/samanamovers",
+                "https://www.instagram.com/samanamovers",
+                "https://www.linkedin.com/company/samanamovers",
+              ],
+              serviceType: [
+                "Home Moving",
+                "Apartment Moving",
+                "villa Moving",
+                "Local Moving",
+                "Long Distance Moving",
+                "Single Item Moving",
+                "Furniture Installation",
+                "Office Relocation",
+                "Furniture Moving",
+                "Packing Services",
+              ],
+              serveAreas: [
+                "Abu Dhabi",
+                "Ajman",
+                "Dubai",
+                "Sharjah",
+                "Ras Al Khaimah",
+                "Fujairah",
+                "Umm Al Quwain",
+                "Al Ain",
+              ],
+              foundingDate: "2018",
+            }),
+          }}
+        />
+      </head>
       <body className={`antialiased  ${Roboto.className}`}>
         <Navbar />
         {children}
