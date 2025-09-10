@@ -85,7 +85,7 @@ export default function RootLayout({
               image:
                 "https://www.samanamoversuae.com/ocal-moving-sharjah-movers-2.jpg",
               priceRange: "AED 1000 - 6000",
-              telephone: "+971 56 356017",
+              telephone: "+971 50 9320597",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Al Estiqlal Street",
@@ -95,7 +95,7 @@ export default function RootLayout({
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+971 56 356017",
+                telephone: "+971 50 9320597",
                 contactType: "Customer Service",
                 areaServed: "AE",
                 availableLanguage: ["English", "Arabic"],

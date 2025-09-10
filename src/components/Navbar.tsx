@@ -39,8 +39,8 @@ const Navbar = () => {
               className="md:w-5 w-4 md:h-5 h-4 fill-[#F2F2F2]"
               strokeWidth={0.5}
             />
-            <Link href="tel:+97156356017" className="font-medium">
-              +971 56 356017
+            <Link href="tel:+971509320597" className="font-medium">
+              +971 50 9320597
             </Link>
           </div>{" "}
           <div className="flex items-center gap-2 md:text-sm text-xs">

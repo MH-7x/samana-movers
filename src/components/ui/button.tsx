@@ -50,7 +50,7 @@ function Button({
   const Comp = asChild ? Slot : "button";
   if (callBtn) {
     return (
-      <Link title="Samana Movers Phone Number" href={`tel:+971563560017`}>
+      <Link title="Samana Movers Phone Number" href={`tel:+971509320597`}>
         <Comp
           data-slot="button"
           className={cn(buttonVariants({ variant, size, className }))}
@@ -62,7 +62,7 @@ function Button({
   return wtBtn ? (
     <Link
       title="Samana Movers WhatsApp Contact"
-      href={`https://wa.me/971563560017?text=I%20Need%20Movers`}
+      href={`https://wa.me/971509320597?text=I%20Need%20Movers`}
     >
       <Comp
         data-slot="button"

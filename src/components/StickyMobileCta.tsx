@@ -11,7 +11,7 @@ const StickyMobileCta = () => {
             <div className="text-gray-600 mt-1">Free quote • No surprises</div>
           </div>
           <a
-            href="tel:+971563560017"
+            href="tel:+971509320597"
             className="inline-flex items-center justify-center rounded-xl b1-bg px-4 py-3 text-sm  text-white "
           >
             <Phone strokeWidth={1.2} size={18} className="mr-2" /> Call Now

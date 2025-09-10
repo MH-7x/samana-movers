@@ -27,7 +27,7 @@ const Footer = () => {
                   and villa relocations with care.
                 </p>
                 <Link
-                  href={"tel:+971563560017"}
+                  href={"tel:+971509320597"}
                   className="flex items-center text-sm font-medium text-dark dark:text-white hover:underline underline-offset-4 transition-colors"
                 >
                   <PhoneCallIcon
@@ -36,7 +36,7 @@ const Footer = () => {
                     strokeWidth={1.5}
                     className="mr-3 b-white"
                   />
-                  <span>+971 56 3560017</span>
+                  <span>+971 50 9320597</span>
                 </Link>
 
                 <Link

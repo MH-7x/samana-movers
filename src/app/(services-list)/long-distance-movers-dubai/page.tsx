@@ -15,7 +15,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Long Distance Movers in Dubai | Move Anywhere in UAE",
-      desc: "Move anywhere in UAE with samana movers, a trusted long distance moving company. Get a free quote today! or call us +971 56 356017",
+      desc: "Move anywhere in UAE with samana movers, a trusted long distance moving company. Get a free quote today! or call us +971 50 9320597",
     },
     path: "/long-distance-movers-dubai",
     image: {
@@ -151,7 +151,7 @@ const LongDistanceMovers = () => {
                     Get a Free Quote
                   </a>
                   <a
-                    href="https://wa.me/+97156356017"
+                    href="https://wa.me/+971509320597"
                     className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-900  transition hover:bg-gray-50"
                   >
                     Talk to a Specialist
@@ -1022,7 +1022,7 @@ const LongDistanceMovers = () => {
               Dubai&lsquo;s most trusted moving company? Our team is standing by
               to help you plan and execute your perfect relocation.
             </p>
-            <Link href={"tel:+971563560017"}>
+            <Link href={"tel:+971509320597"}>
               {" "}
               <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
                 CALL TO MOVERS : <span className="b2">(+971) 56356017</span>

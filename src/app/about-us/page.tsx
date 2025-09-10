@@ -710,7 +710,7 @@ const About1 = () => {
               Sharjah, Dubai, Abu Dhabi, or Ajman, call or WhatsApp us now for a
               free moving quote.
             </p>
-            <Link href={"tel:+971563560017"}>
+            <Link href={"tel:+971509320597"}>
               {" "}
               <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
                 CALL TO MOVERS : <span className="b2">(+971) 56356017</span>

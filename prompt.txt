@@ -45,7 +45,7 @@ function PopUp() {
           </Button>
         </div>
         <Link
-          href={"tel:+971563560017"}
+          href={"tel:+971509320597"}
           className="text-sm b-text underline underline-offset-1 "
         >
           call us direct

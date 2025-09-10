@@ -526,7 +526,7 @@ const page = () => {
               within the same building or across emirates, we&lsquo;ve got you
               covered.
             </p>
-            <Link href={"tel:+971563560017"}>
+            <Link href={"tel:+971509320597"}>
               {" "}
               <h3 className="md:text-2xl text-lg mt-5 font-medium b-white">
                 CALL TO MOVERS : <span className="b2">(+971) 56356017</span>
