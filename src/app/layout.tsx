@@ -8,6 +8,7 @@ import StickyMobileCta from "@/components/StickyMobileCta";
 import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GTM from "@/components/GTM";
+import AdGTM from "@/components/AdGTM";
 
 export const metadata: Metadata = {
   applicationName: "Samana Movers",
@@ -113,14 +114,7 @@ export default function RootLayout({
         />
         <GoogleAnalytics />
         <GTM />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PBRKP7JN"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+        <AdGTM />
       </head>
       <body className={`antialiased  ${Roboto.className}`}>
         <Navbar />
