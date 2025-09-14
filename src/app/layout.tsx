@@ -9,6 +9,7 @@ import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GTM from "@/components/GTM";
 import AdGTM from "@/components/AdGTM";
+import CallTracking from "@/components/CallTracking";
 
 export const metadata: Metadata = {
   applicationName: "Samana Movers",
@@ -113,6 +114,7 @@ export default function RootLayout({
           }}
         />
         <GoogleAnalytics />
+        <CallTracking />
         <GTM />
         <AdGTM />
       </head>
