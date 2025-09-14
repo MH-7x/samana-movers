@@ -9,6 +9,7 @@ import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GTM from "@/components/GTM";
 import AdGTM from "@/components/AdGTM";
+import ConversionTracking from "@/components/gtag_report_conversion";
 import CallTracking from "@/components/CallTracking";
 
 export const metadata: Metadata = {
@@ -114,6 +115,23 @@ export default function RootLayout({
           }}
         />
         <GoogleAnalytics />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-H5FXY75LDQ"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-ads-global"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-H5FXY75LDQ');
+            `,
+          }}
+        />
+        <ConversionTracking />
         <CallTracking />
         <GTM />
         <AdGTM />
